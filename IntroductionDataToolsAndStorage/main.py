@@ -5,7 +5,7 @@ import s3fs
 from pandas import merge
 from sqlalchemy.testing.plugin.plugin_base import engines
 
-from config import AWS_KEY, AWS_SECRET_KEY, AWS_DEFAULT_REGION
+from config import *
 
 dara = { "name": ["dasd", "dadd"],
        "af": ["12", "21"]}
@@ -68,16 +68,13 @@ print(merged_df)
 
 print("----")
 
-USER = "postgres"
-PASSWORD = "2546"
-HOST = "localhost"
-PORT = 5432
+
 DATABASE = "sales_data"
 
 import sqlalchemy
 import psycopg2
 from sqlalchemy import create_engine
 
-connection_string = f"postgresql+psycopg2://{USER}:{PASSWORD}@{HOST}/{DATABASE}"
+connection_string = f"postgresql+psycopg2://{POSTGRESQL_USER}:{POSTGRESQL_PASSWORD}@{POSTGRESQL_HOST}/{POSTGRESQL_DATABASE}"
 engine = create_engine(connection_string)
 merged_df.to_sql("sales_merged", engine, if_exists="replace", index=False)
