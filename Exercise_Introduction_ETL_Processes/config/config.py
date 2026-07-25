@@ -1,0 +1,26 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# AWS Cred
+AWS_KEY = os.getenv("AWS_KEY")
+AWS_SECRET_KEY = os.getenv("AWS_SECRET_KEY")
+AWS_DEFAULT_REGION = os.getenv("AWS_DEFAULT_REGION")
+
+AWS_BUCKET_NAME = os.getenv("AWS_BUCKET_NAME")
+AWS_FOLDER_PREFIX = os.getenv("AWS_FOLDER_PREFIX")
+
+# PostgreSQL Cred
+
+POSTGRESQL_USER = os.getenv("POSTGRESQL_USER")
+POSTGRESQL_PASSWORD = os.getenv("POSTGRESQL_PASSWORD")
+POSTGRESQL_HOST = os.getenv("POSTGRESQL_HOST")
+POSTGRESQL_PORT = os.getenv("POSTGRESQL_PORT")
+POSTGRESQL_DATABASE = os.getenv("POSTGRESQL_DATABASE")
+
+# Check
+#print("AWS_KEY:", AWS_KEY)
+#print("AWS_SECRET_KEY:", AWS_SECRET_KEY[:5] + "..." if AWS_SECRET_KEY else None)
+#print("REGION:", AWS_DEFAULT_REGION)
+#print("BUCKET:", AWS_BUCKET_NAME)
