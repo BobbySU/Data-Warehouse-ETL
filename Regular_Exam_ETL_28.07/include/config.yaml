@@ -1,0 +1,13 @@
+aws_conn_id: aws_conn_id
+
+s3:
+  bucket: data-warehouse-bobby
+  folder: AairflowPproject/aggregated_sales_large.csv
+
+snowflake:
+  conn_id: my_snowflake_conn
+  account: UDNDVED-ZC91948
+  warehouse: COMPUTE_WH
+  database: SALES_DB
+  schema: PUBLIC
+  table: sales_summary
