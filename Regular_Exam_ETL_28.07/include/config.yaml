@@ -2,7 +2,10 @@ aws_conn_id: aws_conn_id
 
 s3:
   bucket: data-warehouse-bobby
-  folder: AairflowPproject/aggregated_sales_large.csv
+  folder: RegularExamETL
+  output_df: RegularExamETL/output_df
+  output_folder: RegularExamETL/output_folder
+  analytics: RegularExamETL/Analytics
 
 snowflake:
   conn_id: my_snowflake_conn
