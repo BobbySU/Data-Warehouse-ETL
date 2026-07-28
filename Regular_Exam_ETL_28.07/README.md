@@ -1,5 +1,7 @@
 # GloboRetail Analytics ETL + ELT Pipeline
 
+https://github.com/BobbySU/Data-Warehouse-ETL/tree/main/Regular_Exam_ETL_28.07
+
 ## Project Overview
 
 This project implements a modern hybrid **ETL + ELT pipeline** for the GloboRetail analytics platform.
